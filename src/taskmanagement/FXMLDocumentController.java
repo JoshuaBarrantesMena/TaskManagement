@@ -73,11 +73,9 @@ public class FXMLDocumentController implements Initializable {
     public void eliminarTarea(ActionEvent event) {
         ObservableList<Tarea> tareaSeleccionada = listaTareasView.getSelectionModel().getSelectedItems();
         if (tareaSeleccionada != null) {
-            
-                for(int i = 0; i < tareaSeleccionada.size(); i++){
-                 tareas.remove(tareaSeleccionada.get(i));
-                 }
-           }
+            tareas.removeAll(tareaSeleccionada);
+                 
+        }
     }
 
     
