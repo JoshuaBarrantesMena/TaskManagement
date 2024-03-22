@@ -84,5 +84,5 @@ public class FXMLDocumentController implements Initializable {
         initialize();
         listaTareasView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
     }    
-    
+    //
 }
